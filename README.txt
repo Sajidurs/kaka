@@ -40,5 +40,14 @@ IMPORTANT
 Upload the CONTENTS of this package to the root of the GitHub repository.
 Do not create an extra folder level around the files.
 
-The Resume button expects resume.pdf at the repository root if you want
-the download button to work.
+The Resume button downloads Polas-Ahmed-Resume.pdf from the repository root.
+
+
+LATEST UPDATE
+-------------
+- Projects page: new "AI Search Visibility" section (#ai-results) with 9
+  screenshots (Google AI Mode, ChatGPT, Search Console) for Better Appliance
+  DMV, IV Better and Legacy Rides. Images live in assets/ai-search/.
+- Contact page: contact form (and its script/styles) removed; contact cards remain.
+- Resume links on case-study pages now point to Polas-Ahmed-Resume.pdf.
+- skills.html: added meta description and cleaned title.

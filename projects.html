@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8fafc">
-  <meta name="description" content="Eight SEO projects by Polas Ahmed, with search performance images from Better Appliance DMV, IV Better, Better Appliance MD, Legacy Rides, Deluxeside, Streetwearness, HighClassRep, and Aqua Luxe.">
+  <meta name="description" content="Eight SEO projects by Polas Ahmed, with search performance images and AI search visibility proof (Google AI Mode, ChatGPT) from Better Appliance DMV, IV Better, Better Appliance MD, Legacy Rides, Deluxeside, Streetwearness, HighClassRep, and Aqua Luxe.">
   <title>SEO Projects & Results | Polas Ahmed</title>
 
   <style>
@@ -998,6 +998,219 @@
         transition:none!important
       }
     }
+  
+    /* ===== AI search visibility ===== */
+    .ai-section{
+      background:#fff;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line)
+    }
+
+    .ai-list{
+      display:grid;
+      gap:28px
+    }
+
+    .ai-client{
+      border-radius:22px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:var(--bg)
+    }
+
+    .ai-client.dark{
+      background:#0b1220;
+      border-color:#0b1220
+    }
+
+    .ai-client-head{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:20px;
+      padding:30px 34px 22px
+    }
+
+    .ai-client-head h3{
+      margin:0;
+      font-size:24px;
+      line-height:1.2;
+      letter-spacing:-.02em
+    }
+
+    .ai-client.dark h3{
+      color:#fff
+    }
+
+    .ai-tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      margin-bottom:14px;
+      padding:6px 12px;
+      border-radius:999px;
+      background:var(--soft);
+      color:var(--blue);
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.1em;
+      text-transform:uppercase
+    }
+
+    .ai-client.dark .ai-tag{
+      background:rgba(255,255,255,.1);
+      color:#9fb2ff
+    }
+
+    .ai-dot{
+      width:6px;
+      height:6px;
+      border-radius:50%;
+      background:currentColor;
+      flex-shrink:0
+    }
+
+    .ai-engines{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px
+    }
+
+    .ai-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:6px 11px;
+      border-radius:999px;
+      background:#eef1f6;
+      color:#4b5666;
+      font-size:11px;
+      font-weight:700
+    }
+
+    .ai-pill .ai-dot{
+      background:#a7afc0
+    }
+
+    .ai-pill.hit{
+      background:#e7f6ec;
+      color:#1f8a4c
+    }
+
+    .ai-pill.hit .ai-dot{
+      background:#2fae63
+    }
+
+    .ai-client.dark .ai-pill{
+      background:rgba(255,255,255,.08);
+      color:#c9d1e6
+    }
+
+    .ai-client.dark .ai-pill.hit{
+      background:rgba(63,196,120,.18);
+      color:#5fe098
+    }
+
+    .ai-shots{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      padding:6px 24px 26px
+    }
+
+    .ai-shot{
+      display:flex;
+      height:100%;
+      flex-direction:column;
+      margin:0;
+      border-radius:14px;
+      overflow:hidden;
+      background:#f1f4f9;
+      min-width:0
+    }
+
+    .ai-client.dark .ai-shot{
+      background:rgba(255,255,255,.05)
+    }
+
+    .ai-shot-img{
+      position:relative;
+      display:block;
+      aspect-ratio:4/3;
+      background:#0d1626;
+      cursor:zoom-in
+    }
+
+    .ai-shot-img img{
+      position:absolute;
+      inset:10px;
+      width:calc(100% - 20px);
+      height:calc(100% - 20px);
+      object-fit:contain;
+      border-radius:8px
+    }
+
+    .ai-shot-meta{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      padding:14px 16px 18px
+    }
+
+    .ai-shot-engine{
+      color:var(--blue);
+      font-size:10px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase
+    }
+
+    .ai-shot-prompt{
+      color:#3a4150;
+      font-size:13px;
+      line-height:1.5;
+      font-style:italic
+    }
+
+    .ai-shot-result{
+      margin-top:2px;
+      color:#1f8a4c;
+      font-size:12px;
+      font-weight:700
+    }
+
+    .ai-client.dark .ai-shot-engine{
+      color:#9fb2ff
+    }
+
+    .ai-client.dark .ai-shot-prompt{
+      color:#c9d1e6
+    }
+
+    .ai-client.dark .ai-shot-result{
+      color:#5fe098
+    }
+
+    @media (max-width:900px){
+      .ai-shots{
+        grid-template-columns:1fr
+      }
+
+      .ai-client-head{
+        padding:24px 22px 18px
+      }
+    }
+
+    @media (max-width:640px){
+      .ai-shots{
+        padding:4px 14px 18px
+      }
+
+      .ai-client-head h3{
+        font-size:21px
+      }
+    }
   </style>
 <style id="portfolio-global-shell">
 /* =========================================================
@@ -1143,6 +1356,9 @@ body > header:not(.portfolio-global-header){display:none !important}
   font-size:12px !important;
 }
 body > footer:not(.portfolio-global-footer){display:none !important}
+.portfolio-footer-legal{display:flex !important;flex-wrap:wrap !important;gap:6px 20px !important}
+.portfolio-footer-legal a{color:#94a3b8 !important;text-decoration:none !important;font-size:12px !important;transition:color .2s ease !important}
+.portfolio-footer-legal a:hover{color:#fff !important}
 
 @media (max-width:900px){
   .portfolio-header-inner{min-height:70px !important}
@@ -1277,17 +1493,17 @@ body > .main-nav {
 
   <header class="portfolio-global-header" data-portfolio-header>
   <div class="portfolio-header-inner">
-    <a class="portfolio-brand" href="index.html" aria-label="Polas Ahmed — Home">Polas Ahmed</a>
+    <a class="portfolio-brand" href="/" aria-label="Polas Ahmed — Home">Polas Ahmed</a>
     <nav class="portfolio-desktop-nav" aria-label="Main navigation">
-      <a data-page="home" href="index.html">Home</a>
-      <a data-page="about" href="about.html">About</a>
-      <a data-page="skills" href="skills.html">Skills</a>
-      <a data-page="projects" href="projects.html">Projects</a>
-      <a data-page="contact" href="contact.html">Contact</a>
+      <a data-page="home" href="/">Home</a>
+      <a data-page="about" href="/about">About</a>
+      <a data-page="skills" href="/skills">Skills</a>
+      <a data-page="projects" href="/projects">Projects</a>
+      <a data-page="contact" href="/contact">Contact</a>
     </nav>
     <div class="portfolio-header-actions">
       <a class="portfolio-btn portfolio-btn-ghost" href="Polas-Ahmed-Resume.pdf" download>Resume</a>
-      <a class="portfolio-btn portfolio-btn-primary" href="mailto:hello@polasahmed.com">Hire Me</a>
+      <a class="portfolio-btn portfolio-btn-primary" href="/contact">Hire Me</a>
     </div>
     <button class="portfolio-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="portfolio-mobile-menu">
       <span></span><span></span><span></span>
@@ -1295,31 +1511,31 @@ body > .main-nav {
   </div>
   <div class="portfolio-mobile-menu" id="portfolio-mobile-menu" aria-hidden="true">
     <nav aria-label="Mobile navigation">
-      <a data-page="home" href="index.html">Home</a>
-      <a data-page="about" href="about.html">About</a>
-      <a data-page="skills" href="skills.html">Skills</a>
-      <a data-page="projects" href="projects.html">Projects</a>
-      <a data-page="contact" href="contact.html">Contact</a>
+      <a data-page="home" href="/">Home</a>
+      <a data-page="about" href="/about">About</a>
+      <a data-page="skills" href="/skills">Skills</a>
+      <a data-page="projects" href="/projects">Projects</a>
+      <a data-page="contact" href="/contact">Contact</a>
     </nav>
     <div class="portfolio-mobile-actions">
       <a class="portfolio-btn portfolio-btn-ghost" href="Polas-Ahmed-Resume.pdf" download>Resume</a>
-      <a class="portfolio-btn portfolio-btn-primary" href="contact.html">Hire Me</a>
+      <a class="portfolio-btn portfolio-btn-primary" href="/contact">Hire Me</a>
     </div>
   </div>
 </header>
 <div class="portfolio-legacy-header" aria-hidden="true" style="display:none!important"><header class="site-header">
     <nav class="wrap header-row" aria-label="Main navigation">
 
-      <a class="brand" href="index.html" aria-label="Polas Ahmed — Home">
+      <a class="brand" href="/" aria-label="Polas Ahmed — Home">
         Polas Ahmed
       </a>
 
       <div class="desktop-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html" aria-current="page">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects" aria-current="page">Projects</a>
+        <a href="/contact">Contact</a>
       </div>
 
       <div class="nav-cta">
@@ -1327,7 +1543,7 @@ body > .main-nav {
           Resume
         </a>
 
-        <a class="nav-btn nav-btn-primary" href="contact.html">
+        <a class="nav-btn nav-btn-primary" href="/contact">
           Hire Me
         </a>
       </div>
@@ -1336,13 +1552,13 @@ body > .main-nav {
         <summary>Menu</summary>
 
         <nav class="mobile-nav" aria-label="Mobile navigation">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="skills.html">Skills</a>
-          <a href="projects.html" aria-current="page">Projects</a>
-          <a href="contact.html">Contact</a>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/skills">Skills</a>
+          <a href="/projects" aria-current="page">Projects</a>
+          <a href="/contact">Contact</a>
           <a href="Polas-Ahmed-Resume.pdf" download>Resume</a>
-          <a href="contact.html">Hire Me</a>
+          <a href="/contact">Hire Me</a>
         </nav>
       </details>
 
@@ -1380,6 +1596,10 @@ body > .main-nav {
           <a class="button" href="#projects">
             Explore projects
             <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="hero-note" href="#ai-results">
+            <strong>+ AI search results</strong> ↓
           </a>
 
           <span class="hero-note">
@@ -1432,7 +1652,7 @@ body > .main-nav {
 
             <a
               class="project-card-link"
-              href="better-appliance-dmv.html"
+              href="/better-appliance-dmv"
               aria-label="View Better Appliance DMV SEO case study"
             ></a>
 
@@ -1500,7 +1720,7 @@ body > .main-nav {
 
             <a
               class="project-card-link"
-              href="iv-better.html"
+              href="/iv-better"
               aria-label="View IV Better Hydration and Wellness SEO case study"
             ></a>
 
@@ -1569,7 +1789,7 @@ body > .main-nav {
 
             <a
               class="project-card-link"
-              href="better-appliance-md.html"
+              href="/better-appliance-md"
               aria-label="View Better Appliance MD SEO case study"
             ></a>
 
@@ -1637,7 +1857,7 @@ body > .main-nav {
 
             <a
               class="project-card-link"
-              href="legacy-rides.html"
+              href="/legacy-rides"
               aria-label="View Legacy Rides SEO case study"
             ></a>
 
@@ -1710,7 +1930,7 @@ body > .main-nav {
 
             <a
               class="project-card-link"
-              href="deluxeside.html"
+              href="/deluxeside"
               aria-label="View Deluxeside SEO case study"
             ></a>
 
@@ -1782,7 +2002,7 @@ body > .main-nav {
 
             <a
               class="project-card-link"
-              href="streetwearness.html"
+              href="/streetwearness"
               aria-label="View Streetwearness SEO case study"
             ></a>
 
@@ -1854,7 +2074,7 @@ body > .main-nav {
 
             <a
               class="project-card-link"
-              href="highclassrep.html"
+              href="/highclassrep"
               aria-label="View HighClassRep SEO case study"
             ></a>
 
@@ -1926,7 +2146,7 @@ body > .main-nav {
 
             <a
               class="project-card-link"
-              href="aqualuxe.html"
+              href="/aqualuxe"
               aria-label="View Aqua Luxe SEO case study"
             ></a>
 
@@ -2004,6 +2224,171 @@ body > .main-nav {
 
 
     <!-- =========================
+         AI SEARCH VISIBILITY
+    ========================== -->
+
+    <section id="ai-results" class="section ai-section" aria-labelledby="ai-title">
+
+      <div class="wrap">
+
+        <div class="section-head">
+
+          <div>
+            <span class="eyebrow">AI search visibility</span>
+            <h2 id="ai-title">Showing up inside AI answers, not just search results.</h2>
+          </div>
+
+          <p>
+            Alongside classic organic SEO, I track and improve how these brands
+            appear inside AI-generated answers: Google AI Mode / AI Overviews,
+            ChatGPT, Perplexity, and Gemini.
+          </p>
+
+        </div>
+
+        <div class="ai-list">
+
+        <article class="ai-client light" aria-labelledby="ai-client-01">
+          <div class="ai-client-head">
+            <div>
+              <span class="ai-tag"><span class="ai-dot" aria-hidden="true"></span>AI search proof · 01</span>
+              <h3 id="ai-client-01">Better Appliance DMV</h3>
+            </div>
+            <div class="ai-engines" aria-label="AI engines tested"><span class="ai-pill hit"><span class="ai-dot" aria-hidden="true"></span>Google AI Mode</span><span class="ai-pill hit"><span class="ai-dot" aria-hidden="true"></span>ChatGPT</span><span class="ai-pill"><span class="ai-dot" aria-hidden="true"></span>Perplexity</span><span class="ai-pill"><span class="ai-dot" aria-hidden="true"></span>Gemini</span></div>
+          </div>
+          <div class="ai-shots">
+            <figure class="ai-shot">
+              <a class="ai-shot-img" href="assets/ai-search/dmv-google-ai-mode-alexandria.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: Best appliance store in Alexandria VA">
+                <img src="assets/ai-search/dmv-google-ai-mode-alexandria.webp" alt="Google AI Mode screenshot for Better Appliance DMV: Best appliance store in Alexandria VA" width="1067" height="858" loading="lazy">
+              </a>
+              <figcaption class="ai-shot-meta">
+                <span class="ai-shot-engine">Google AI Mode</span>
+                <span class="ai-shot-prompt">“Best appliance store in Alexandria VA”</span>
+                <span class="ai-shot-result"><span aria-hidden="true">✓</span> Cited in answer</span>
+              </figcaption>
+            </figure>
+            <figure class="ai-shot">
+              <a class="ai-shot-img" href="assets/ai-search/dmv-google-ai-mode-comparison.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: Better Appliance vs Bray  Scarff for appliance shopping">
+                <img src="assets/ai-search/dmv-google-ai-mode-comparison.webp" alt="Google AI Mode screenshot for Better Appliance DMV: Better Appliance vs Bray  Scarff for appliance shopping" width="1172" height="850" loading="lazy">
+              </a>
+              <figcaption class="ai-shot-meta">
+                <span class="ai-shot-engine">Google AI Mode</span>
+                <span class="ai-shot-prompt">“Better Appliance vs Bray &amp; Scarff for appliance shopping”</span>
+                <span class="ai-shot-result"><span aria-hidden="true">✓</span> Named as the recommended pick</span>
+              </figcaption>
+            </figure>
+            <figure class="ai-shot">
+              <a class="ai-shot-img" href="assets/ai-search/dmv-chatgpt-alexandria.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: Best appliance store in Alexandria VA">
+                <img src="assets/ai-search/dmv-chatgpt-alexandria.webp" alt="ChatGPT screenshot for Better Appliance DMV: Best appliance store in Alexandria VA" width="453" height="585" loading="lazy">
+              </a>
+              <figcaption class="ai-shot-meta">
+                <span class="ai-shot-engine">ChatGPT</span>
+                <span class="ai-shot-prompt">“Best appliance store in Alexandria VA”</span>
+                <span class="ai-shot-result"><span aria-hidden="true">✓</span> Listed with rating &amp; focus area</span>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="ai-client dark" aria-labelledby="ai-client-02">
+          <div class="ai-client-head">
+            <div>
+              <span class="ai-tag"><span class="ai-dot" aria-hidden="true"></span>AI search proof · 02</span>
+              <h3 id="ai-client-02">IV Better Hydration &amp; Wellness</h3>
+            </div>
+            <div class="ai-engines" aria-label="AI engines tested"><span class="ai-pill hit"><span class="ai-dot" aria-hidden="true"></span>Google AI Mode</span><span class="ai-pill"><span class="ai-dot" aria-hidden="true"></span>ChatGPT</span><span class="ai-pill"><span class="ai-dot" aria-hidden="true"></span>Perplexity</span><span class="ai-pill"><span class="ai-dot" aria-hidden="true"></span>Gemini</span></div>
+          </div>
+          <div class="ai-shots">
+            <figure class="ai-shot">
+              <a class="ai-shot-img" href="assets/ai-search/iv-better-google-ai-mode-lewisville.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: Where can I get medical iron infusions or weight loss shots in Lewisville?">
+                <img src="assets/ai-search/iv-better-google-ai-mode-lewisville.webp" alt="Google AI Mode screenshot for IV Better Hydration and Wellness: Where can I get medical iron infusions or weight loss shots in Lewisville?" width="1070" height="855" loading="lazy">
+              </a>
+              <figcaption class="ai-shot-meta">
+                <span class="ai-shot-engine">Google AI Mode</span>
+                <span class="ai-shot-prompt">“Where can I get medical iron infusions or weight loss shots in Lewisville?”</span>
+                <span class="ai-shot-result"><span aria-hidden="true">✓</span> Top-listed provider</span>
+              </figcaption>
+            </figure>
+            <figure class="ai-shot">
+              <a class="ai-shot-img" href="assets/ai-search/iv-better-google-ai-mode-hebron.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: Are there any mobile IV bars near Hebron Parkway?">
+                <img src="assets/ai-search/iv-better-google-ai-mode-hebron.webp" alt="Google AI Mode screenshot for IV Better Hydration and Wellness: Are there any mobile IV bars near Hebron Parkway?" width="944" height="855" loading="lazy">
+              </a>
+              <figcaption class="ai-shot-meta">
+                <span class="ai-shot-engine">Google AI Mode</span>
+                <span class="ai-shot-prompt">“Are there any mobile IV bars near Hebron Parkway?”</span>
+                <span class="ai-shot-result"><span aria-hidden="true">✓</span> Featured as in-office &amp; mobile option</span>
+              </figcaption>
+            </figure>
+            <figure class="ai-shot">
+              <a class="ai-shot-img" href="assets/ai-search/iv-better-gsc-ai-performance.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: Generative AI performance report, last 3 months">
+                <img src="assets/ai-search/iv-better-gsc-ai-performance.webp" alt="Search Console screenshot for IV Better Hydration and Wellness: Generative AI performance report, last 3 months" width="1821" height="757" loading="lazy">
+              </a>
+              <figcaption class="ai-shot-meta">
+                <span class="ai-shot-engine">Search Console</span>
+                <span class="ai-shot-prompt">Generative AI performance report, last 3 months</span>
+                <span class="ai-shot-result"><span aria-hidden="true">✓</span> 85K impressions in AI features</span>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="ai-client light" aria-labelledby="ai-client-03">
+          <div class="ai-client-head">
+            <div>
+              <span class="ai-tag"><span class="ai-dot" aria-hidden="true"></span>AI search proof · 03</span>
+              <h3 id="ai-client-03">Legacy Rides</h3>
+            </div>
+            <div class="ai-engines" aria-label="AI engines tested"><span class="ai-pill hit"><span class="ai-dot" aria-hidden="true"></span>Google AI Mode</span><span class="ai-pill"><span class="ai-dot" aria-hidden="true"></span>ChatGPT</span><span class="ai-pill"><span class="ai-dot" aria-hidden="true"></span>Perplexity</span><span class="ai-pill"><span class="ai-dot" aria-hidden="true"></span>Gemini</span></div>
+          </div>
+          <div class="ai-shots">
+            <figure class="ai-shot">
+              <a class="ai-shot-img" href="assets/ai-search/legacy-rides-google-ai-mode-dfw.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: How can I rent a gig economy car with unlimited mileage in DFW">
+                <img src="assets/ai-search/legacy-rides-google-ai-mode-dfw.webp" alt="Google AI Mode screenshot for Legacy Rides: How can I rent a gig economy car with unlimited mileage in DFW" width="926" height="863" loading="lazy">
+              </a>
+              <figcaption class="ai-shot-meta">
+                <span class="ai-shot-engine">Google AI Mode</span>
+                <span class="ai-shot-prompt">“How can I rent a gig economy car with unlimited mileage in DFW”</span>
+                <span class="ai-shot-result"><span aria-hidden="true">✓</span> Cited in side panel</span>
+              </figcaption>
+            </figure>
+            <figure class="ai-shot">
+              <a class="ai-shot-img" href="assets/ai-search/legacy-rides-google-ai-mode-frisco.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: Rideshare car rentals with no credit check in Frisco TX">
+                <img src="assets/ai-search/legacy-rides-google-ai-mode-frisco.webp" alt="Google AI Mode screenshot for Legacy Rides: Rideshare car rentals with no credit check in Frisco TX" width="1345" height="834" loading="lazy">
+              </a>
+              <figcaption class="ai-shot-meta">
+                <span class="ai-shot-engine">Google AI Mode</span>
+                <span class="ai-shot-prompt">“Rideshare car rentals with no credit check in Frisco TX”</span>
+                <span class="ai-shot-result"><span aria-hidden="true">✓</span> Named “Top Frisco Pick”</span>
+              </figcaption>
+            </figure>
+            <figure class="ai-shot">
+              <a class="ai-shot-img" href="assets/ai-search/legacy-rides-google-ai-mode-dallas.webp" target="_blank" rel="noopener" aria-label="Open full-size screenshot: Where can I rent a car for Uber and DoorDash simultaneously in Dallas">
+                <img src="assets/ai-search/legacy-rides-google-ai-mode-dallas.webp" alt="Google AI Mode screenshot for Legacy Rides: Where can I rent a car for Uber and DoorDash simultaneously in Dallas" width="1452" height="858" loading="lazy">
+              </a>
+              <figcaption class="ai-shot-meta">
+                <span class="ai-shot-engine">Google AI Mode</span>
+                <span class="ai-shot-prompt">“Where can I rent a car for Uber and DoorDash simultaneously in Dallas”</span>
+                <span class="ai-shot-result"><span aria-hidden="true">✓</span> Recommended, Frisco/DFW area</span>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+        </div>
+
+        <p class="evidence-note">
+          <strong>How this is measured:</strong> each screenshot shows a real
+          query tested against Google AI Mode, ChatGPT, Perplexity, and Gemini.
+          Green engine pills mark where the brand was cited or recommended for
+          that client’s tested prompts. Screenshots are dated and re-tested
+          periodically because AI answers change over time.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
          CTA
     ========================== -->
 
@@ -2030,7 +2415,7 @@ body > .main-nav {
 
           </div>
 
-          <a class="button" href="contact.html">
+          <a class="button" href="/contact">
             Contact me
             <span aria-hidden="true">↗</span>
           </a>
@@ -2051,36 +2436,37 @@ body > .main-nav {
   <footer class="portfolio-global-footer">
   <div class="portfolio-footer-inner">
     <div class="portfolio-footer-brand">
-      <a class="portfolio-brand" href="index.html">Polas Ahmed</a>
+      <a class="portfolio-brand" href="/">Polas Ahmed</a>
       <p>SEO &amp; AI Search Strategist</p>
       <p class="portfolio-footer-description">Building stronger organic visibility, search authority, and measurable growth for modern brands.</p>
     </div>
     <div class="portfolio-footer-column">
       <h3>Navigation</h3>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/skills">Skills</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
     </div>
     <div class="portfolio-footer-column">
       <h3>Expertise</h3>
-      <a href="skills.html">SEO Strategy</a>
-      <a href="skills.html">Technical SEO</a>
-      <a href="skills.html">Local SEO</a>
-      <a href="skills.html">AI Search / AEO</a>
-      <a href="projects.html">Case Studies</a>
+      <a href="/skills">SEO Strategy</a>
+      <a href="/skills">Technical SEO</a>
+      <a href="/skills">Local SEO</a>
+      <a href="/skills">AI Search / AEO</a>
+      <a href="/projects">Case Studies</a>
     </div>
     <div class="portfolio-footer-column">
       <h3>Connect</h3>
       <a href="https://www.linkedin.com/in/polas-ahmed/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/polasahmed0" target="_blank" rel="noopener">GitHub</a>
       <a href="mailto:hello@polasahmed.com">Email Me</a>
-      <a href="contact.html">Work With Me</a>
+      <a href="/contact">Work With Me</a>
     </div>
   </div>
   <div class="portfolio-footer-bottom">
     <span>© 2026 Polas Ahmed. All rights reserved.</span>
+    <span class="portfolio-footer-legal"><a href="/privacy-policy">Privacy Policy</a><a href="/refund-policy">Refund Policy</a><a href="/terms-and-conditions">Terms &amp; Conditions</a></span>
     <span>SEO &amp; AI Search Portfolio</span>
   </div>
 </footer>
@@ -2091,7 +2477,7 @@ body > .main-nav {
       <div class="footer-left">
 
         <a
-          href="index.html"
+          href="/"
           class="brand"
           aria-label="Polas Ahmed — home"
         >
@@ -2108,19 +2494,19 @@ body > .main-nav {
       <ul class="footer-links">
 
         <li>
-          <a href="about.html">About</a>
+          <a href="/about">About</a>
         </li>
 
         <li>
-          <a href="skills.html">Skills</a>
+          <a href="/skills">Skills</a>
         </li>
 
         <li>
-          <a href="projects.html">Projects</a>
+          <a href="/projects">Projects</a>
         </li>
 
         <li>
-          <a href="contact.html">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
 
       </ul>
@@ -2156,7 +2542,7 @@ body > .main-nav {
 (function(){
   const header = document.querySelector('[data-portfolio-header]');
   if(!header) return;
-  const current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  const current = ((location.pathname.replace(/\/+$/,'').split('/').pop() || 'index').toLowerCase().replace(/\.html$/,'') || 'index') + '.html';
   const page = current === 'index.html' || current === '' ? 'home'
     : current === 'about.html' ? 'about'
     : current === 'skills.html' ? 'skills'

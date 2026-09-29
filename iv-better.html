@@ -566,6 +566,9 @@ body > header:not(.portfolio-global-header){display:none !important}
   font-size:12px !important;
 }
 body > footer:not(.portfolio-global-footer){display:none !important}
+.portfolio-footer-legal{display:flex !important;flex-wrap:wrap !important;gap:6px 20px !important}
+.portfolio-footer-legal a{color:#94a3b8 !important;text-decoration:none !important;font-size:12px !important;transition:color .2s ease !important}
+.portfolio-footer-legal a:hover{color:#fff !important}
 
 @media (max-width:900px){
   .portfolio-header-inner{min-height:70px !important}
@@ -699,17 +702,17 @@ body > .main-nav {
   <div id="iv-better-case-study" class="ivb-case-study">
   <header class="portfolio-global-header" data-portfolio-header>
   <div class="portfolio-header-inner">
-    <a class="portfolio-brand" href="index.html" aria-label="Polas Ahmed — Home">Polas Ahmed</a>
+    <a class="portfolio-brand" href="/" aria-label="Polas Ahmed — Home">Polas Ahmed</a>
     <nav class="portfolio-desktop-nav" aria-label="Main navigation">
-      <a data-page="home" href="index.html">Home</a>
-      <a data-page="about" href="about.html">About</a>
-      <a data-page="skills" href="skills.html">Skills</a>
-      <a data-page="projects" href="projects.html">Projects</a>
-      <a data-page="contact" href="contact.html">Contact</a>
+      <a data-page="home" href="/">Home</a>
+      <a data-page="about" href="/about">About</a>
+      <a data-page="skills" href="/skills">Skills</a>
+      <a data-page="projects" href="/projects">Projects</a>
+      <a data-page="contact" href="/contact">Contact</a>
     </nav>
     <div class="portfolio-header-actions">
-      <a class="portfolio-btn portfolio-btn-ghost" href="resume.pdf" download>Resume</a>
-      <a class="portfolio-btn portfolio-btn-primary" href="mailto:hello@polasahmed.com">Hire Me</a>
+      <a class="portfolio-btn portfolio-btn-ghost" href="Polas-Ahmed-Resume.pdf" download>Resume</a>
+      <a class="portfolio-btn portfolio-btn-primary" href="/contact">Hire Me</a>
     </div>
     <button class="portfolio-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="portfolio-mobile-menu">
       <span></span><span></span><span></span>
@@ -717,15 +720,15 @@ body > .main-nav {
   </div>
   <div class="portfolio-mobile-menu" id="portfolio-mobile-menu" aria-hidden="true">
     <nav aria-label="Mobile navigation">
-      <a data-page="home" href="index.html">Home</a>
-      <a data-page="about" href="about.html">About</a>
-      <a data-page="skills" href="skills.html">Skills</a>
-      <a data-page="projects" href="projects.html">Projects</a>
-      <a data-page="contact" href="contact.html">Contact</a>
+      <a data-page="home" href="/">Home</a>
+      <a data-page="about" href="/about">About</a>
+      <a data-page="skills" href="/skills">Skills</a>
+      <a data-page="projects" href="/projects">Projects</a>
+      <a data-page="contact" href="/contact">Contact</a>
     </nav>
     <div class="portfolio-mobile-actions">
-      <a class="portfolio-btn portfolio-btn-ghost" href="resume.pdf" download>Resume</a>
-      <a class="portfolio-btn portfolio-btn-primary" href="contact.html">Hire Me</a>
+      <a class="portfolio-btn portfolio-btn-ghost" href="Polas-Ahmed-Resume.pdf" download>Resume</a>
+      <a class="portfolio-btn portfolio-btn-primary" href="/contact">Hire Me</a>
     </div>
   </div>
 </header>
@@ -1021,36 +1024,37 @@ body > .main-nav {
   <footer class="portfolio-global-footer">
   <div class="portfolio-footer-inner">
     <div class="portfolio-footer-brand">
-      <a class="portfolio-brand" href="index.html">Polas Ahmed</a>
+      <a class="portfolio-brand" href="/">Polas Ahmed</a>
       <p>SEO &amp; AI Search Strategist</p>
       <p class="portfolio-footer-description">Building stronger organic visibility, search authority, and measurable growth for modern brands.</p>
     </div>
     <div class="portfolio-footer-column">
       <h3>Navigation</h3>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/skills">Skills</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
     </div>
     <div class="portfolio-footer-column">
       <h3>Expertise</h3>
-      <a href="skills.html">SEO Strategy</a>
-      <a href="skills.html">Technical SEO</a>
-      <a href="skills.html">Local SEO</a>
-      <a href="skills.html">AI Search / AEO</a>
-      <a href="projects.html">Case Studies</a>
+      <a href="/skills">SEO Strategy</a>
+      <a href="/skills">Technical SEO</a>
+      <a href="/skills">Local SEO</a>
+      <a href="/skills">AI Search / AEO</a>
+      <a href="/projects">Case Studies</a>
     </div>
     <div class="portfolio-footer-column">
       <h3>Connect</h3>
       <a href="https://www.linkedin.com/in/polas-ahmed/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/polasahmed0" target="_blank" rel="noopener">GitHub</a>
       <a href="mailto:hello@polasahmed.com">Email Me</a>
-      <a href="contact.html">Work With Me</a>
+      <a href="/contact">Work With Me</a>
     </div>
   </div>
   <div class="portfolio-footer-bottom">
     <span>© 2026 Polas Ahmed. All rights reserved.</span>
+    <span class="portfolio-footer-legal"><a href="/privacy-policy">Privacy Policy</a><a href="/refund-policy">Refund Policy</a><a href="/terms-and-conditions">Terms &amp; Conditions</a></span>
     <span>SEO &amp; AI Search Portfolio</span>
   </div>
 </footer>
@@ -1109,7 +1113,7 @@ body > .main-nav {
 (function(){
   const header = document.querySelector('[data-portfolio-header]');
   if(!header) return;
-  const current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  const current = ((location.pathname.replace(/\/+$/,'').split('/').pop() || 'index').toLowerCase().replace(/\.html$/,'') || 'index') + '.html';
   const page = current === 'index.html' || current === '' ? 'home'
     : current === 'about.html' ? 'about'
     : current === 'skills.html' ? 'skills'
